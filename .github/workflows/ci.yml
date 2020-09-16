@@ -49,7 +49,7 @@ jobs:
         
       # Runs a single command using the runners shell
       - name: Run a netstat
-        run: netstat -atnp
+        run: which docker 
 
       # Runs a single command using the runners shell
       - name: ps list
@@ -57,7 +57,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: check whether mysql command exist 
-        run: docker ps 
+        run: /usr/bin/docker ps 
      
 
       # Runs a set of commands using the runners shell
