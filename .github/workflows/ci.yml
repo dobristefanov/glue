@@ -49,10 +49,10 @@ jobs:
         
       # Runs a single command using the runners shell
       - name: Show DEBIAN version
-        run: cat /etc/debian_version
+        run: env
       # Runs a single command using the runners shell
       - name: ps list
-        run: ps auxwww 
+        run: ls -al / 
 
       # Runs a single command using the runners shell
       - name: check whether mysql command exist 
