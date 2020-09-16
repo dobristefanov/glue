@@ -48,9 +48,8 @@ jobs:
         run: ls -al model/Glue_Scripts.sql 
         
       # Runs a single command using the runners shell
-      - name: Run a netstat
-        run: which docker 
-
+      - name: Show DEBIAN version
+        run: cat /etc/debian_version
       # Runs a single command using the runners shell
       - name: ps list
         run: ps auxwww 
